@@ -49,7 +49,7 @@ export default{
             </nav>
 
             <div class="jumbo">
-                <img src="../../public/images/avada-nightclub-homepage-image.png" alt="">
+                <img src="/images/avada-nightclub-homepage-image.png" alt="">
             </div>
 
             <div class="header_text_under_img">
@@ -62,7 +62,7 @@ export default{
             </div>
 
             <div class="clubVideo">
-                <img src="../../public/images/avada-nightclub-play-showreel-400x95.png" alt="">
+                <img src="/images/avada-nightclub-play-showreel-400x95.png" alt="">
             </div>
 
             
@@ -70,6 +70,30 @@ export default{
         </div>
 
         <div class="dx">
+
+            <div class="block">
+
+                <i class="fa-solid fa-images demos_img"></i>
+                <div class="first_block_text">
+                    Demos
+                </div>
+
+            </div>
+            <div class="block">
+                
+                <div class="price_block">
+                    <div class="dollar">
+                        $
+                    </div>
+                    <div class="number">
+                        39
+                    </div>
+                </div>
+                <div class="onSale">
+                    On sale
+                </div>
+
+            </div>
 
         </div>
         
@@ -86,12 +110,12 @@ header{
     display: flex;
     width: 100%;
     height: 1285px;
-    background-image: url(../../public/images/avada-nightclub-home-hero.jpg);
+    background-image: url(/images/avada-nightclub-home-hero.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 
     .sx{
-        width: 97%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -153,7 +177,46 @@ header{
     }
 
     .dx{
-        width: 3%;
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 5px;
+        
+    }
+    
+    .demos_img{
+        font-size: 25px;
+        color: $jacksonsPurple;
+        padding-bottom: 5px;
+    }
+
+    .first_block_text{
+        font-size: 12px;
+    }
+
+    .price_block{
+        display: flex;
+    }
+
+    .dollar{
+        color: rgb(65, 185, 41);
+    }
+
+    .number{
+        color: rgb(65, 185, 41);
+        font-size: 25px;
     }
 }
 

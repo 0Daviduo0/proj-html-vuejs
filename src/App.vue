@@ -36,6 +36,6 @@ export default {
 
 <style lang="scss" scoped>
 
-@use '../src/assets/style/general.scss';
+@use '../src/assets/style/general.scss' as *;
 
 </style>

@@ -113,6 +113,7 @@ header{
     background-image: url(/images/avada-nightclub-home-hero.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 
     .sx{
         width: 100%;
@@ -181,6 +182,8 @@ header{
         display: flex;
         flex-direction: column;
         margin-top: 200px;
+        position: absolute;
+        right: 0;
     }
 
     .block{

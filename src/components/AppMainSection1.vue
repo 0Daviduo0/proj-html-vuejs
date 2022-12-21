@@ -2,7 +2,7 @@
 // import { store } from '../store.js';
 
 export default{
-    name: "AppMain",
+    name: "AppMainSection1",
     components: {
 
     },
@@ -35,14 +35,46 @@ export default{
 
             <div class="feature feature_1">
 
+                <div class="featureText">
+                    dance lounge
+                </div>
+                
+                <div class="coloredBar coloredBar_1">
+                    
+                </div>
+
             </div>
             <div class="feature feature_2">
+
+                <div class="featureText">
+                    rooftop bar
+                </div>
+
+                <div class="coloredBar coloredBar_2">
+                    
+                </div>
                 
             </div>
             <div class="feature feature_3">
+
+                <div class="featureText">
+                    vip lounge
+                </div>
+
+                <div class="coloredBar coloredBar_3">
+                    
+                </div>
                 
             </div>
             <div class="feature feature_4">
+
+                <div class="featureText">
+                    resident dj
+                </div>
+
+                <div class="coloredBar coloredBar_4">
+
+                </div>
                 
             </div>
             
@@ -62,8 +94,8 @@ export default{
 @use '../../src/assets/style/colorPalette.scss' as *;
 
 .spacing{
-    background-color: #111015;
-    height: 100px;
+    background-color: #0f0e13;
+    height: 200px;
 }
 
 .welcome{
@@ -107,23 +139,58 @@ export default{
 .feature{
     width: 600px;
     height: 400px;
+    display: flex;
+    padding-left: 20px;
+    align-items: flex-end;
+    color: $prim;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.featureText{
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.coloredBar{
+    width: 100%;
+    height: 20px;
+    margin-left: 10px;
 }
 
 .feature_1{
     background-image: url(/images/avada-nightclub-dancelounge-small.jpg);
     background-size: cover;
 }
+
+    .coloredBar_1{
+        border-top: 1px solid $havelockBlue;
+    }
+
 .feature_2{
     background-image: url(/images/avada-nightclub-rooftoplounge-small.jpg);
     background-size: cover;
 }
+
+    .coloredBar_2{
+        border-top: 1px solid $violetRed;
+    }
 .feature_3{
     background-image: url(/images/avada-nightclub-viplounge-small.jpg);
     background-size: cover;
 }
+
+    .coloredBar_3{
+        border-top: 1px solid $sepiaSkin;
+    }
 .feature_4{
     background-image: url(/images/avada-nightclub-events-small.jpg);
     background-size: cover;
 }
+
+    .coloredBar_4{
+        border-top: 1px solid $violetRed;
+    }
 
 </style>

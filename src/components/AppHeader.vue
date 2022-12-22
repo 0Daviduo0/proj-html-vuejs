@@ -23,7 +23,7 @@ export default{
         <div class="sx">
 
             <nav>
-                <ul>
+                <ul class="white_text">
                     <li class="selected">
                         HOME
                     </li>
@@ -52,10 +52,10 @@ export default{
                 <img src="/images/avada-nightclub-homepage-image.png" alt="">
             </div>
 
-            <div class="header_text_under_img">
+            <div class="header_text_under_img white_text">
                 making memories all night long
 
-                <div class="vipButton">
+                <div class="vipButton red_button">
                 BECOME A VIP
                 </div>
 
@@ -123,7 +123,6 @@ header{
     }
 
     ul{
-        color: $prim;
         display: flex;
         align-items: center;
 
@@ -155,7 +154,6 @@ header{
     .header_text_under_img{
         border-top: $havelockBlue 5px solid;
         font-size: 50px;
-        color: $prim;
         padding: 50px 100px;
         background-color: rgba(0, 0, 0, 0.493);
         position: relative;
@@ -170,7 +168,6 @@ header{
         left: 50%; 
         transform: translate(-50%, -50%);
         padding: 10px 20px;
-        background-color: $violetRed;
     }
 
     .clubVideo{

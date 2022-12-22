@@ -2,7 +2,7 @@
 // import { store } from '../store.js';
 
 export default{
-    name: "AppMainSection1",
+    name: "AppWelcome",
     components: {
 
     },
@@ -20,10 +20,10 @@ export default{
 
     <div class="welcome">
 
-        <div class="welcomeTo">
+        <div class="bold_little_title blue_text">
             WELCOME TO AVANA
         </div>
-        <h1 class="title">
+        <h1 class="big_title white_text">
             have the night of your life
         </h1>
 
@@ -33,7 +33,7 @@ export default{
 
         <div class="contentBlocks">
 
-            <div class="feature feature_1">
+            <div class="feature feature_1 white_text">
 
                 <div class="featureText">
                     dance lounge
@@ -44,7 +44,7 @@ export default{
                 </div>
 
             </div>
-            <div class="feature feature_2">
+            <div class="feature feature_2 white_text">
 
                 <div class="featureText">
                     rooftop bar
@@ -55,7 +55,7 @@ export default{
                 </div>
                 
             </div>
-            <div class="feature feature_3">
+            <div class="feature feature_3 white_text">
 
                 <div class="featureText">
                     vip lounge
@@ -66,7 +66,7 @@ export default{
                 </div>
                 
             </div>
-            <div class="feature feature_4">
+            <div class="feature feature_4 white_text">
 
                 <div class="featureText">
                     resident dj
@@ -95,7 +95,7 @@ export default{
 
 .spacing{
     background-color: #0f0e13;
-    height: 200px;
+    height: 300px;
 }
 
 .welcome{
@@ -106,18 +106,6 @@ export default{
     background-size: cover;
     height: 1250px;
     padding-top: 150px;
-}
-
-.welcomeTo{
-    color: $havelockBlue;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.title{
-    font-size: 70px;
-    color: $prim;
-    padding-bottom: 20px;
 }
 
 .welcome_text{
@@ -142,7 +130,6 @@ export default{
     display: flex;
     padding-left: 20px;
     align-items: flex-end;
-    color: $prim;
     font-size: 30px;
     font-weight: 700;
     padding-bottom: 50px;

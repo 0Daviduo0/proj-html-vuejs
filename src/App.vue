@@ -1,6 +1,8 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
-import AppMainSection1 from './components/AppMainSection1.vue'
+import AppWelcome from './components/AppWelcome.vue'
+import AppDj_rg from './components/AppDj_rg.vue'
+import AppSpecialEvents from './components/AppSpecialEvents.vue'
 import AppFooter from './components/AppFooter.vue'
 
 import { store } from './store.js';
@@ -10,7 +12,9 @@ export default {
   name: "App",
   components: {
     AppHeader,
-    AppMainSection1,
+    AppWelcome,
+    AppDj_rg,
+    AppSpecialEvents,
     AppFooter,
 },
   data() {
@@ -27,7 +31,9 @@ export default {
 
   <AppHeader/>
 
-  <AppMainSection1/>
+  <AppWelcome/>
+  <AppDj_rg/>
+  <AppSpecialEvents/>
 
   <AppFooter/>
 

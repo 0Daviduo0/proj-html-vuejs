@@ -48,7 +48,7 @@ export default{
 
                 <div class="viewAll blue_text">
 
-                    VIEW ALL EVENTS
+                    <a href=""> VIEW ALL EVENTS </a>
 
                 </div>
 

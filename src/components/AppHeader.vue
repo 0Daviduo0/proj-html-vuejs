@@ -162,7 +162,6 @@ header{
 
     .vipButton{
         position: absolute;
-        color: $prim;
         font-size: 20px;
         top: 100%;  
         left: 50%; 

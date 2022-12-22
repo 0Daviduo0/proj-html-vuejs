@@ -100,8 +100,6 @@ export default{
 
             .profile_button{
                 padding: 10px 0px;
-                color: $prim;
-                font-weight: 700;
                 text-align: center;
                 width: 160px;
             }

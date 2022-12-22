@@ -1,5 +1,5 @@
 <script>
-// import { store } from '../store.js';
+import { store } from '../store.js';
 
 export default{
     name: "AppFooter",
@@ -8,7 +8,7 @@ export default{
     },
     data() {
         return {
-            // store,
+            store,
         }
     },
 }
@@ -28,54 +28,18 @@ export default{
                     EVENTS
                 </div>
 
-                <div class="event">
+                <div class="event" v-for="event in store.eventsContent">
 
-                    <img src="/images/avada-nightclub-events-6-66x66.jpg" alt="">
-
-                    <div class="eventInfo">
-
-                        <div class="eventTitle bold_little_title blue_text">
-                            Dj Fusion
-                        </div>
-
-                        <div class="eventDate">
-                            August 19, 2021 @ 8:00am
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="event">
-
-                    <img src="/images/avada-nightclub-events-5-66x66.jpg" alt="">
+                    <img :src="event.eventImg" alt="">
 
                     <div class="eventInfo">
 
                         <div class="eventTitle bold_little_title blue_text">
-                            House Nation
+                            {{ event.eventTitle }}
                         </div>
 
                         <div class="eventDate">
-                            August 19, 2021 @ 8:00am
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="event">
-
-                    <img src="/images/avada-nightclub-events-4-66x66.jpg" alt="">
-
-                    <div class="eventInfo">
-
-                        <div class="eventTitle bold_little_title blue_text">
-                            Jazz Night
-                        </div>
-
-                        <div class="eventDate">
-                            August 19, 2021 @ 8:00am
+                            {{ event.eventDate }}
                         </div>
 
                     </div>
@@ -95,28 +59,27 @@ export default{
 
                 <div class="infoBox avadaLogo">
 
-                    <img src="/images/avada-nightclub-logo-2x-200x66.png" alt="">
+                    <img :src="store.contactLogo" alt="">
 
                 </div>
 
-                <div class="infoBox contacts">
+                <div class="infoBox contacts" v-for="info in store.contactsContent">
 
-                    Avada Nightclub <br>
-                    100 Night Club Blvd <br>
-                    Beverly Hills <br>
-                    <span class="blue_text">hi@yourdomain.com</span> <br>
-                    +1 (555) 000 000
+                    {{ info.name }} <br>
+                    {{ info.adress }} <br>
+                    {{ info.location }} <br>
+                    <span class="blue_text">{{ info.email }}</span> <br>
+                    {{ info.number }}
 
 
                 </div>
 
                 <div class="infoBox socials white_text">
 
-                    <i class="fa-brands fa-facebook-f socialIcon"></i>
-                    <i class="fa-brands fa-twitter socialIcon"></i>
-                    <i class="fa-brands fa-instagram socialIcon"></i>
-                    <i class="fa-brands fa-youtube socialIcon"></i>
-
+                    <a v-for="social in store.contactsSocials" :href="social.link"> 
+                        <i :class="social.icon"></i> 
+                    </a>
+                
                 </div>
 
             </div>
@@ -127,21 +90,17 @@ export default{
                     VENUES
                 </div>
 
-                <div class="">
-                    <img src="/images/avada-nightclub-footer-rooftop-400x171.jpg" alt="">
+                <div class="venue" v-for="venue in store.venuesContent">
+                    <img :src="venue.venue" alt="">
                 </div>
                
-                <div class="venue">
-                    <img src="/images/avada-nightclub-footer-dancelounge-400x171.jpg" alt="">
-                </div>
-                
             </div>
 
         </div>
 
         <div class="copyright">
 
-            © Copyright 2012 - 2021 | Avada Theme by <span class="blue_text">Theme Fusion</span> | All Rights Reserved | Powered by <span class="blue_text">WordPress</span>
+            © Copyright 2012 - 2021 | Avada Theme by <a href=""> <span class="blue_text">Theme Fusion</span> </a> | All Rights Reserved | Powered by <a href=""> <span class="blue_text">WordPress</span> </a> 
 
         </div>
 
@@ -153,6 +112,11 @@ export default{
 <style lang="scss" scoped>
 @use '../src/assets/style/general.scss' as *;
 @use '../../src/assets/style/colorPalette.scss' as *;
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 footer{
     display: flex;

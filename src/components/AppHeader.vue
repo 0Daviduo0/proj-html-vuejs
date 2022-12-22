@@ -1,5 +1,5 @@
 <script>
-// import { store } from '../store.js';
+import { store } from '../store.js';
 
 export default{
     name: "AppHeader",
@@ -8,7 +8,7 @@ export default{
     },
     data() {
         return {
-            // store,
+            store,
         }
     },
 }
@@ -24,27 +24,11 @@ export default{
 
             <nav>
                 <ul class="white_text">
-                    <li class="selected">
-                        HOME
+                    <li v-for="navItem in store.navContent" :class="navItem.class">
+                        <a href=""> {{ navItem.navName }}</a>
+                        <img :src="navItem.src" alt="">
                     </li>
-                    <li>
-                        THE CLUB
-                    </li>
-                    <li>
-                        EVENTS
-                    </li>
-                    <li>
-                        <img src="../../public/images/avada-nightclub-logo-2x-300x99.png" alt="">
-                    </li>
-                    <li>
-                        JOBS
-                    </li>
-                    <li>
-                        NEWS
-                    </li>
-                    <li>
-                        CONTACT US
-                    </li>
+                    
                 </ul>
             </nav>
 
@@ -105,6 +89,11 @@ export default{
 <style lang="scss" scoped>
 
 @use '../../src/assets/style/colorPalette.scss' as *;
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 header{
     display: flex;

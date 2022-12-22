@@ -21,7 +21,7 @@ export const store = reactive({
         {
             class: 'notSelected',
             navName: '',
-            src: '../../public/images/avada-nightclub-logo-2x-300x99.png'
+            src: '/images/avada-nightclub-logo-2x-300x99.png'
         },
         {
             class: 'notSelected',

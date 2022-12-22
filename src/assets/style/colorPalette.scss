@@ -47,8 +47,16 @@
     font-weight: 700;
 }
 
+.red_button:hover{
+    background-color: $havelockBlue;
+}
+
 .blue_button{
     background-color: $havelockBlue;
     color: $prim;
     font-weight: 700;
+}
+
+.blue_button:hover{
+    background-color: $violetRed;
 }

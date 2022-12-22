@@ -2,7 +2,7 @@
 // import { store } from '../store.js';
 
 export default{
-    name: "AppWelcome",
+    name: "AppSpecialEvents",
     components: {
 
     },

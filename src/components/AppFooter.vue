@@ -93,15 +93,55 @@ export default{
 
             <div class="info_column avada_info">
 
+                <div class="infoBox avadaLogo">
+
+                    <img src="/images/avada-nightclub-logo-2x-200x66.png" alt="">
+
+                </div>
+
+                <div class="infoBox contacts">
+
+                    Avada Nightclub <br>
+                    100 Night Club Blvd <br>
+                    Beverly Hills <br>
+                    <span class="blue_text">hi@yourdomain.com</span> <br>
+                    +1 (555) 000 000
+
+
+                </div>
+
+                <div class="infoBox socials white_text">
+
+                    <i class="fa-brands fa-facebook-f socialIcon"></i>
+                    <i class="fa-brands fa-twitter socialIcon"></i>
+                    <i class="fa-brands fa-instagram socialIcon"></i>
+                    <i class="fa-brands fa-youtube socialIcon"></i>
+
+                </div>
+
             </div>
 
             <div class="info_column venues">
+                
+                <div class="venues_text white_text">
+                    VENUES
+                </div>
 
+                <div class="">
+                    <img src="/images/avada-nightclub-footer-rooftop-400x171.jpg" alt="">
+                </div>
+               
+                <div class="venue">
+                    <img src="/images/avada-nightclub-footer-dancelounge-400x171.jpg" alt="">
+                </div>
+                
             </div>
 
         </div>
 
         <div class="copyright">
+
+            © Copyright 2012 - 2021 | Avada Theme by <span class="blue_text">Theme Fusion</span> | All Rights Reserved | Powered by <span class="blue_text">WordPress</span>
 
         </div>
 
@@ -124,6 +164,7 @@ footer{
     background-size: 100%;
     background-position: 0 -2500px;
     background-repeat: no-repeat;
+    padding-top: 50px;
 }
 
     .info{
@@ -133,6 +174,7 @@ footer{
         .info_column{
             display: flex;
             flex-direction: column;
+            padding-right: 100px;
         }
 
             .events{
@@ -146,7 +188,7 @@ footer{
 
                 .event{
                     display: flex;
-                    margin-bottom: 20px;
+                    margin-bottom: 40px;
                 }
 
                     .eventInfo{
@@ -164,5 +206,58 @@ footer{
                     padding-top: 20px;
                     font-size: 15px;
                 }
+
+            .avada_info{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+            }
+
+                .infoBox{
+                    display: flex;
+                    
+                }
+
+                    .avadaLogo{
+                        width: 200px;
+                        height: 66px;
+                    }
+
+                    .contacts{
+                        flex-direction: column;
+                        text-align: center;
+                        color: rgba(255, 255, 255, 0.411);
+                    }
+
+                    .socials{
+                        display: flex;
+                        justify-content: space-around;
+                    }
+
+                        .socialIcon{
+                            font-size: 20px;
+                        }
+                
+            .venues{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+                .venues_text{
+                    height: 50px;
+                    margin-bottom: 50px;
+                }
+
+                    .venue{
+                        margin-top: 20px;
+                    }
+
+            .copyright{
+                padding-top: 80px;
+                color: rgba(255, 255, 255, 0.411);
+            }
 
 </style>
